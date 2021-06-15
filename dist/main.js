@@ -1,1 +1,1 @@
-console.log(7);
+document.getElementById("content").innerHTML="<div> hello world </div>";

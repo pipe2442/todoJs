@@ -2,4 +2,5 @@ function sum(a, b) {
     return a + b;
 }
 
-console.log(sum(2, 5));
+
+document.getElementById('content').innerHTML = "<div> hello world </div>"
