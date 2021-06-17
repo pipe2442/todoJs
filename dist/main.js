@@ -1,1 +1,1 @@
-document.getElementById("content").innerHTML="<div> hello world </div>";
+(()=>{const t=document.getElementById("content");document.getElementById("task"),t.innerHTML+='<input type="text" id="task"><button id="miboton">New Task</button>';const e=[];document.getElementById("miboton").onclick=()=>{e.push(task.value),console.log(e),document.getElementById("task").value="",function(){let n=e.length-1,o=document.createElement("h1");o.textContent=`hola ${e[n]}`,o.setAttribute("class","note"),t.appendChild(o)}()}})();
