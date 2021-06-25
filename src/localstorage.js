@@ -1,19 +1,19 @@
 import {
-    projectList, projectDomLocal
+  projectList, projectDomLocal,
 } from './newproject';
+
 const save_localstorage = () => {
-    localStorage.setItem('ListaDeProyectos', JSON.stringify(projectList))
-}
+  localStorage.setItem('ListaDeProyectos', JSON.stringify(projectList));
+};
 
 const get_localstorage = () => {
-    
-    if (localStorage.getItem('ListaDeProyectos')) {
-        let test = JSON.parse(localStorage.getItem('ListaDeProyectos')) 
-        test.forEach(t => {
-            projectList.push(t)
-            projectDomLocal(t)
-        });
-    }
-}
+  if (localStorage.getItem('ListaDeProyectos')) {
+    const test = JSON.parse(localStorage.getItem('ListaDeProyectos'));
+    test.forEach((t) => {
+      projectList.push(t);
+      projectDomLocal(t);
+    });
+  }
+};
 
-export { save_localstorage, get_localstorage }
+export { save_localstorage, get_localstorage };
